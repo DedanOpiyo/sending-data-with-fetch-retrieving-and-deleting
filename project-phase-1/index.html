@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Application</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1>Chat Application</h1>
+
+    <div id="mainWrapper">
+        <!-- User Sign Up Form -->
+        <div id="signUp" class="user">
+            <div id="designSignUp">
+                <h3>Sign Up</h3>
+                <form id="signUpForm" autocomplete="on"> <!-- Avoid browser igroring auto-fills by setting autocomplete attribute. -->
+                <input type="text" id="username" placeholder="Username" autocomplete="name" required><br><br>
+                <input type="email" id="email" placeholder="Email" autocomplete="email" required><br><br>
+                <input type="password" id="password" placeholder="Password" autocomplete="new-password" required><br><br>
+                <button type="submit">Sign Up</button>
+                </form>
+                <div id="toggleSignIn"></div>
+            </div>
+        </div>
+
+        <!-- User Login Form -->
+        <div id="signIn" class="user-login">
+            <div id="designLogin">
+                <h3>Log In</h3>
+                <form id="loginForm" autocomplete="on">
+                <input type="email" id="loginEmail" placeholder="Email" required><br><br>
+                <input type="password" id="loginPassword" placeholder="Password" required><br><br>
+                <button type="submit">Log In</button>
+                </form>
+                <div id="toggleSignUp"></div>
+            </div>
+        </div>
+        
+        <div id="usersList">Friends
+            <div id="lists"></div>
+        </div>
+        <p id="paragraph"></p>
+        <!-- <div id="mainMessageDiv"> -->
+            <div id="messagesHolder">Click on friend to view messages</div>
+        <!-- </div> -->
+                        <!-- Send Message Form -->
+                        <div class="messageh" id="messageDiv">
+                            <div>Send Message</div>
+                            <form id="messageForm">
+                            <input type="number" id="receiverId" placeholder="Receiver ID" style="display: none;"><br><br>
+                            <textarea id="messageContent" placeholder="Message" required></textarea><br><br>
+                            <button type="submit">Send</button>
+                            </form>
+                        </div>
+        
+        <div id="galleryHolder">Gallery
+            <div id="holdImages">
+                <div id="holdUserlist"></div>
+            </div>
+        </div>
+                        <!-- Gallery Form -->
+                        <div class="galleryh" id="galleryDiv">
+                            <p>Update Your Gallery</p>
+                            <form id="galleryForm">
+                            <input type="url" id="imageUrl" placeholder="Image URL" required><br><br>
+                            <button type="submit">Add Image</button>
+                            </form>
+                        </div>
+
+        <div id="groups">GROUPS</div>
+        <!-- Main Wrapper -->
+        <div id="mainDiv">
+
+            <div id="displayMessages">
+                <div id="messages"></div>
+                
+                <!-- Send Message Form -->
+                <div class="messageh" id="messageDiv ---v">
+                    <h3>Send Message</h3>
+                    <form id="messageForm">
+                    <input type="number" id="receiverId" placeholder="Receiver ID" required><br><br>
+                    <textarea id="messageContent" placeholder="Message" required></textarea><br><br>
+                    <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="displayGallery">
+                <!-- <div id="gallery"></div> -->
+                
+                <!-- Gallery Form -->
+                <div class="galleryh" id="galleryDiv">
+                    <h3>Update Your Gallery</h3>
+                    <form id="galleryForm">
+                    <input type="url" id="imageUrl" placeholder="Image URL" required><br><br>
+                    <button type="submit">Add Image</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Group Form -->
+            <div class="grouph" id="groupDiv">
+                <h3>Create a Group</h3>
+                <form id="groupForm">
+                <input type="text" id="groupName" placeholder="Group Name" required><br><br>
+                <button type="submit">Create Group</button>
+                </form>
+            </div>
+
+        </div> 
+    </div>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>

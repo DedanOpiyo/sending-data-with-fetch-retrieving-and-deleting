@@ -1,0 +1,99 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "alice",
+      "email": "alice@example.com",
+      "password": "password123",
+      "gallery": [
+        "https://example.com/image1.jpg"
+      ],
+      "receivedImages": []
+    },
+    {
+      "id": "2",
+      "username": "bob",
+      "email": "bob@example.com",
+      "password": "password456",
+      "gallery": [
+        "https://images.unsplash.com/photo-1741850826386-9cb8e5543c73?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1741850820274-5457a736b23a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1741850826386-9cb8e5543c73?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1741850820274-5457a736b23a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
+      "receivedImages": []
+    },
+    {
+      "id": "3",
+      "username": "john_doe",
+      "email": "johndoe@example.com",
+      "password": "johndoe222",
+      "gallery": []
+    },
+    {
+      "id": "4",
+      "username": "john_doe",
+      "email": "johndoe@example.com",
+      "password": "dddffgghss",
+      "gallery": []
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "senderId": 1,
+      "receiverId": 2,
+      "message": "Hey Bob, how's it going?",
+      "timestamp": "2025-03-24T14:00:00",
+      "groupId": null
+    },
+    {
+      "id": "2",
+      "senderId": 2,
+      "receiverId": 1,
+      "message": "Hey, I'm doing great! How about you?",
+      "timestamp": "2025-03-24T14:05:00",
+      "groupId": null
+    },
+    {
+      "id": "3",
+      "senderId": 1,
+      "receiverId": 2,
+      "message": "Just got back from the gym!",
+      "timestamp": "2025-03-24T14:10:00",
+      "groupId": null
+    },
+    {
+      "id": "b669",
+      "senderId": "2",
+      "receiverId": "3",
+      "message": "messge j.d",
+      "timestamp": "2025-03-28T18:46:58.268Z"
+    },
+    {
+      "id": "2035",
+      "senderId": "2",
+      "receiverId": "3",
+      "message": "messge j.d",
+      "timestamp": "2025-03-28T18:46:58.269Z"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Developers",
+      "members": [
+        1,
+        2
+      ],
+      "messages": [
+        {
+          "id": 1,
+          "senderId": 1,
+          "message": "Welcome to the group!",
+          "timestamp": "2025-03-24T14:00:00"
+        }
+      ]
+    }
+  ]
+}

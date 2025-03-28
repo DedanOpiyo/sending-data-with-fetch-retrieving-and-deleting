@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  body h1 {
+    margin-bottom: 2em;
+  }
+  #mainWrapper {
+    position: relative;
+  } 
+  #mainDiv {
+    /* display: none; */
+    display: flex;
+    border: 1px solid red;
+  } 
+  #signUp {
+    background-color: #F7F7F7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+
+    position: absolute;
+    margin-top: 15%;
+  } 
+  #designSignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  #designSignUp #username {
+    width: 100%;
+  } 
+  #designSignUp #email {
+    width: 100%;
+  } 
+  #designSignUp #password {
+    width: 100%;
+  } 
+  #designSignUp #submit {
+    align-self: center;
+    margin-left: 300px;
+  } 
+  #signIn {
+    background-color: #F7F7F7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+
+    position: absolute;
+    margin-top: 15%;
+    display: none;
+  } 
+  #designLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  /* Created by Js */
+  #navigateForward {
+    padding: 10px;
+    font-size: .9em;
+  } 
+  /* Created by Js */
+  #navigateBack {
+    padding: 10px;
+    font-size: .9em;
+  } 
+  /* Created by Js */
+  #signUpLink {
+    color: #0000EE;
+  } 
+  /* Created by Js */
+  #signInLink {
+    color: #0000EE;
+  } 
+  .hidden {
+    display: flex; /* display: none; */
+  }
+  .unhide {
+    display: flex;
+  }
+  .user, .message, .group, .gallery {
+    margin-bottom: 20px;
+  }
+  .gallery img {
+    /* max-width: 200px; */
+    
+  }
+  #usersList {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    width: 14em; */
+    height: auto; 
+    margin-bottom: 3em;
+    color: #0000EE;
+  }
+  lists {
+    margin-top: 1em;
+  }
+  /* Ensure each user div is displayed as a block element */
+  .userList {
+    display: flex;
+    padding: 1px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    width: 14em;
+    height: auto; 
+    color: black;
+  }
+  #galleryHolder {
+    /* should have dynamic height */
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    height: 15em;
+    margin-top: 10em;
+    
+  }
+  #imageGallery {
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 300px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  #imageSpan {
+    position: relative;
+    height: 300px;
+    background-color: fuchsia;
+    margin-top: 3em;
+  }
+  #holdImages {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    gap: 20px;
+    height: 14em;
+  }
+  #imagesGallery img {
+    color: firebrick;
+  }
+  #holdUserlist {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: lightgray;
+    background-color: aquamarine;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 300;
+    opacity: 60%;
+  }
+  #holdUserlist::before {
+    content: 'Share Image With: ';
+  }
+  #imagesGallery .userList {
+    background-color: #0000EE;
+  }
+  #mainMessageDiv {
+    color: #0000EE;
+  }
+  #messagesHolder {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    width: 14em; */
+    height: auto; 
+    margin-bottom: 3em;
+    background-color: lightgrey;
+    border-radius: 16px;
+    padding: 1em;
+  }
+  #messagesHoldert > div {
+    padding: 10px; 
+    border-radius: 10px; 
+    /* word-wrap: break-word; */
+  }
+  #messagesHoldert > div:nth-child(odd) {
+    background-color: #add8e6; 
+  }
+  #messagesHoldert > div:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+/*   #messageThread {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc; 
+    width: 14em; *//*
+    height: auto; 
+    margin-bottom: 3em;
+    color: white;
+  } */
+  /* Style for the options container (hidden by default) */
+  .editOtions {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  /* Style for each option (vertical alignment) */
+  .editOtions div {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  /* Hover effect for options */
+  .editOtions div:hover {
+    background-color: lightcoral;
+  }
